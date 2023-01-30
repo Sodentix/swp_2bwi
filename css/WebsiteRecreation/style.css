@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'xxxlutz';
+    src: url('/font/Sans-Variable.d010b7ff4568cd804ae32fb4c8302543.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'xxxlutz';
+    font-size: .90rem;
+    border-bottom: 3px solid transparent;
+    font-weight: 700;
+}
+.navbar {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 12rem;
+    margin-right: 14rem;
+   
+
+   
+}
+.navbar a:hover {
+    border-bottom: 3px solid red;
+    cursor: pointer;
+    transition: all 0.15s;  
+    
+}
+
+.navbar:hover + .dropdown, .dropdown:hover {
+    display: block;  
+}
+.searchbar input[type=search] {
+    border: 1.1px solid rgb(233,233,233);
+    height: 3rem;
+    width: 52.5rem;
+    font-family: 'xxxlutz';
+    font-weight: 600;
+    padding-left: 1.8vh;
+    letter-spacing: 0.1rem;
+    transition: all 0.75s;
+}
+.searchbar input[type=search]:hover {
+    border: 1px solid rgb(0, 0, 0);
+    transition: all 0.75s;
+}
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+#slideshow {
+  
+    padding-top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40rem;
+    width: 100%;
+    padding-left: 0;
+    
+}
+.searchbarLogo {
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+#xxxLutzLogo {
+    height: 1.9rem;
+}
+#ImageIcon
+{
+    height: 3rem;
+}
+#placeFinderImage {
+    height: 2rem;
+}
+
+#placeFinderText {
+    color: black;
+    font-size: 0.625rem;
+    line-height: 1.6;
+    font-weight: bolder;
+    font-family: 'xxxlutz';
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border-bottom: solid 1px transparent;
+}
+#placeFinderText:hover {
+    border-bottom: solid lightgrey 1px;
+    transition: all 0.75;
+}
+
+.placeFinder {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropDownArrowImage {
+    height: .70rem;
+    padding-left: 10px;
+}
+
+.svg {
+    display: block;
+    height: 15px;
+    width: 40px;
+}
+
+.Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.dropdown {
+    
+    height: 500px;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 2px solid rgb(182, 182, 182);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: none;
+}
